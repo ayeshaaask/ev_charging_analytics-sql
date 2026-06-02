@@ -6,7 +6,20 @@ This project demonstrates how SQL can be used to analyze **Electric Vehicle (EV)
 
 ---
 
-## 🚗 Project Overview
+## 📌 Table of Contents
+- <a href="#project-overview">🚗 Project Overview</a>
+- <a href="#database-schema">🧱 Database Schema</a>
+- <a href="#ddl">🧩 Part A — DDL (Data Definition Language)</a>
+- <a href="#dml">✏️ Part B — DML (Data Manipulation Language)</a>
+- <a href="#dql">📊 Part C — DQL (Data Query Language)</a>
+- <a href="#tools -- technologies">🧰 Tools & Technologies</a>
+- <a href="#how-to-run">🏁 How to Run</a>
+- <a href="#deliverables">🧾 Project Deliverables</a>
+- <a href="#author--contact">👤 Author & Contact</a>
+
+---
+
+<h2><a class="anchor" id="project-overview"></a>🚗 Project Overview</h2>
 
 With the rapid adoption of electric vehicles, understanding charging behavior is crucial for both **Charge Point Operators (CPOs)** and **mobility data analysts**.  
 This project uses SQL to extract insights such as:
@@ -18,9 +31,9 @@ This project uses SQL to extract insights such as:
 
 ---
 
-## 🧱 Database Schema
+<h2><a class="anchor" id="database-schema"></a>🧱 Database Schema</h2>
 
-**Database:** `ev_charging_analytics`  
+**Database:** `EV_Charging_Analytics`  
 **Table:** `ev_charging_sessions`
 
 | Column | Data Type | Description |
@@ -49,7 +62,7 @@ This project uses SQL to extract insights such as:
 
 ---
 
-## 🧩 Part A — DDL (Data Definition Language)
+<h2><a class="anchor" id="ddl"></a>🧩 Part A — DDL (Data Definition Language)</h2>
 
 ### 1. Create Database
 Creates a fresh database to house all project tables.
@@ -88,7 +101,7 @@ DROP COLUMN temperature_c;
 
 ---
 
-## ✏️ Part B — DML (Data Manipulation Language)
+<h2><a class="anchor" id="dml"></a>✏️ Part B — DML (Data Manipulation Language)</h2>
 
 ### 6. Import Records
 All 1,320 records were imported from `Ev_charging_pattern.csv` using MySQL Workbench's **Table Data Import Wizard** with UTF-8 encoding and direct column mapping.
@@ -136,7 +149,7 @@ VALUES
 
 ---
 
-## 📊 Part C — DQL (Data Query Language)
+<h2><a class="anchor" id="dql"></a>📊 Part C — DQL (Data Query Language)</h2>
 
 ### 11. Sessions with High Charging Rate
 Retrieves all sessions where charging rate exceeds 40 kW — typically DC Fast Chargers.
@@ -200,7 +213,7 @@ GROUP BY charger_type;
 ```
 
 ### 18. Highest Temperature Recorded
-*(Note: Temperature column was dropped in DDL Task 5.)*
+*(Note: This query was run before `temperature_c` was dropped in DDL Task 5.)*
 ```sql
 SELECT MAX(temperature_c) AS highest_temp
 FROM ev_charging_sessions;
@@ -229,7 +242,7 @@ FROM ev_charging_sessions;
 
 ---
 
-## 🧰 Tools & Technologies
+<h2><a class="anchor" id="tools"></a>🧰 Tools & Technologies</h2>
 
 | Tool | Purpose |
 |------|---------|
@@ -240,17 +253,26 @@ FROM ev_charging_sessions;
 
 ---
 
-## 🏁 How to Run
+<h2><a class="anchor" id="how-to-run"></a>🏁 How to Run</h2>
 
 1. Open MySQL Workbench and connect to your local server
 2. Run `ev_charging_project.sql` — it contains all statements in order
-3. Screenshots of all query along with outputs are in the `Queries & Outputs/` folder
+3. Screenshots of all query outputs are in the `outputs/` folder
 
 ---
 
-## 🧾 Project Deliverables
+<h2><a class="anchor" id="deliverables"></a>🧾 Project Deliverables</h2>
 
 - ✅ `Ev_charging_pattern.csv` — Source dataset
 - ✅ `ev_charging_project.sql` — All SQL statements (DDL + DML + DQL)
 - ✅ `readme.md` — This documentation file
-- ✅ `Queries & Outputs/` — Screenshots of all query results
+- ✅ `outputs/` — Screenshots of all query results
+
+---
+
+<h2><a class="anchor" id="author--contact"></a>👤 Author & Contact</h2>
+
+**Ayesha Shaikh**  
+Data Analyst  
+📧 Email: skayesha318siddiqa@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/sk-ayesha-siddiqa)
