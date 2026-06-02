@@ -12,7 +12,7 @@ This project demonstrates how SQL can be used to analyze **Electric Vehicle (EV)
 - <a href="#ddl">🧩 Part A — DDL (Data Definition Language)</a>
 - <a href="#dml">✏️ Part B — DML (Data Manipulation Language)</a>
 - <a href="#dql">📊 Part C — DQL (Data Query Language)</a>
-- <a href="#tools -- technologies">🧰 Tools & Technologies</a>
+- <a href="#tools">🧰 Tools & Technologies</a>
 - <a href="#how-to-run">🏁 How to Run</a>
 - <a href="#deliverables">🧾 Project Deliverables</a>
 - <a href="#author--contact">👤 Author & Contact</a>
